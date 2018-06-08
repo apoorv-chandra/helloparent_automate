@@ -12,8 +12,7 @@ public class PaymentRequestPage extends BaseLib{
   private WebElement navToPaymntreqlink;
   @FindBy(xpath="//li[text()='Payment Requests']")
   private WebElement clickonPaymntReq;
-  @FindBy(xpath="//a[text()='Create New']")
-  private WebElement clickonCreate;
+ 
 			  
   public PaymentRequestPage(WebDriver driver){
 		PageFactory.initElements(driver, this);
@@ -22,6 +21,5 @@ public class PaymentRequestPage extends BaseLib{
   public void navToPaymentreq(){
 		navToPaymntreqlink.click();
 		clickonPaymntReq.click();
-		clickonCreate.click();
-	}
+			}
 }

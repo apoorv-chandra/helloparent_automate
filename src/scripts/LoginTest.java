@@ -42,12 +42,8 @@ public class LoginTest extends BaseLib{
 	public void loginTest(){
 		LoginPage lp=new LoginPage(driver);
 		PaymentRequestPage paymnt=new PaymentRequestPage(driver);
-		CreatePaymntReqstPage newpaymntreq=new CreatePaymntReqstPage(driver);
 		String username = ExcelUtilities.readData("Sheet1", 1, 1);
-		String password = ExcelUtilities.readData("Sheet1", 1, 2);
-		String Title = ExcelUtilities.readData("Sheet1", 5, 5);
-		String Descrptn = ExcelUtilities.readData("Sheet1", 6, 5);
-		String Amount = ExcelUtilities.readData("Sheet1", 7, 5);
+		String password = ExcelUtilities.readData("Sheet1", 1, 2);		
 		lp.login(username, password);
 		try {
 			Thread.sleep(3000);
@@ -56,9 +52,14 @@ public class LoginTest extends BaseLib{
 			e.printStackTrace();
 			Reporter.log("Cannot login",true);
 		}	
+		//navigate to payment request page
 		paymnt.navToPaymentreq();
-		Reporter.log("Successfully navigated to Create payment request page.",true);
-		newpaymntreq.CreateNewPaymntReq(Title, Descrptn, Amount);
+		Reporter.log("Successfully navigated to Lists of payment request page.",true);
+		//navigate to create new payment request page
+		CreatePaymntReqstPage newpaymntreq=new CreatePaymntReqstPage(driver);
+		String Title = ExcelUtilities.readData("Sheet1", 5, 6);
+		String Descrptn = ExcelUtilities.readData("Sheet1", 5, 7);
+		newpaymntreq.CreateNewPaymntReq(Title, Descrptn);
 		try {
 			Thread.sleep(2000);
 			Reporter.log("New Payment Req created successfully",true);
@@ -66,5 +67,6 @@ public class LoginTest extends BaseLib{
 			e.printStackTrace();
 			Reporter.log("Cannot create",true);
 		}
+		paymnt.navToPaymentreq();
 	}
 }

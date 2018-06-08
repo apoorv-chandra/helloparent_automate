@@ -8,8 +8,12 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.ss.usermodel.WorkbookFactory;
+import org.apache.poi.ss.util.cellwalk.CellWalkContext;
+
+import com.microsoft.schemas.office.visio.x2012.main.CellType;
 
 public class ExcelUtilities {
 	
@@ -42,7 +46,8 @@ public class ExcelUtilities {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-			//Workbook wb = WorkbookFactory.create(new FileInputStream(new File(filePath)));
+			//Workbook wb = WorkbookFactory.create(new FileInputStream(new File(filePath)));  
+		
 		value = wb.getSheet(sheetName).getRow
 				(rowNum).getCell(cellNum).getStringCellValue();	
 		return value;

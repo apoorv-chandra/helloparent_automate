@@ -7,6 +7,8 @@ import org.openqa.selenium.support.PageFactory;
 import generic.BaseLib;
 
 public class CreatePaymntReqstPage extends BaseLib{
+	@FindBy(xpath="//a[text()='Create New']")
+	private WebElement clickonCreate;
 	@FindBy(id="Title")
 	private WebElement title;
 	@FindBy(id="Description")
@@ -21,19 +23,25 @@ public class CreatePaymntReqstPage extends BaseLib{
 	private WebElement slctStudent;
 	@FindBy(xpath="//span[contains(text(),'Send')]")
 	private WebElement createPaymntReq;
+	@FindBy(id="view")
+	private WebElement clickoutside;
+
 	
 	public CreatePaymntReqstPage(WebDriver driver){
 		PageFactory.initElements(driver, this);
 	}
-	public void CreateNewPaymntReq(String Title, String Descrptn, String Amount)
+	public void CreateNewPaymntReq(String Title, String Descrptn)
 	{
+		clickonCreate.click();
 		title.sendKeys(Title);
 		Desc.sendKeys(Descrptn);
-		amount.sendKeys(Amount);
+		//amount.sendKeys(String.valueOf(Amount));
+		amount.sendKeys("550");
 		lstdate.sendKeys("10 June 2018");
+		clickoutside.click();
 		clickonstdntlst.click();
 		slctStudent.click();
-		createPaymntReq.click();	
+		createPaymntReq.click();
 		
 	}
 }
