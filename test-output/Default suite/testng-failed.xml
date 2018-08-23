@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scripts.PaymentRequestTest">
+      <class name="scripts.ApproveFeeScreenTest">
         <methods>
-          <include name="paymentRequestTest"/>
           <include name="preCondition"/>
+          <include name="approveandall"/>
           <include name="postCondition"/>
         </methods>
-      </class> <!-- scripts.PaymentRequestTest -->
+      </class> <!-- scripts.ApproveFeeScreenTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
