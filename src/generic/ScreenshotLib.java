@@ -12,8 +12,8 @@ public class ScreenshotLib {
 	{
 		EventFiringWebDriver efw=new EventFiringWebDriver(driver);
 		File srcFile = efw.getScreenshotAs(OutputType.FILE);
-	File destFile=new File(".\\screenshots\\"+fileName+".png");
-		
+		File destFile=new File(".\\screenshots\\"+fileName+".png");
+
 		try {
 			FileUtils.copyFile(srcFile, destFile);
 		} catch (IOException e) {

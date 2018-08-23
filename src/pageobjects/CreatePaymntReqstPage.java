@@ -25,13 +25,13 @@ public class CreatePaymntReqstPage extends BaseLib{
 	private WebElement createPaymntReq;
 	@FindBy(id="view")
 	private WebElement clickoutside;
-	
-	  @FindBy(xpath="//span[text()='Fees']")
-	  private WebElement navToPaymntreqlink;
-	  @FindBy(xpath="//li[text()='Payment Requests']")
-	  private WebElement clickonPaymntReq;
 
-	
+	@FindBy(xpath="//span[text()='Fees']")
+	private WebElement navToPaymntreqlink;
+	@FindBy(xpath="//li[text()='Payment Requests']")
+	private WebElement clickonPaymntReq;
+
+
 	public CreatePaymntReqstPage(WebDriver driver){
 		PageFactory.initElements(driver, this);
 	}
@@ -47,11 +47,11 @@ public class CreatePaymntReqstPage extends BaseLib{
 		clickonstdntlst.click();
 		slctStudent.click();
 		createPaymntReq.click();
-		
+
 	}
-	
-	  public void navToPaymentreq(){
-			navToPaymntreqlink.click();
-			clickonPaymntReq.click();
-				}
+
+	public void navToPaymentreq(){
+		navToPaymntreqlink.click();
+		clickonPaymntReq.click();
+	}
 }

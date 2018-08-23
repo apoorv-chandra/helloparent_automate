@@ -15,7 +15,7 @@ public class LoginPage {
 	private WebElement pwdTxtBx;
 	@FindBy(xpath="//button[@type='submit']")
 	private WebElement loginBtn;
-	
+
 	public LoginPage(WebDriver driver){
 		PageFactory.initElements(driver, this);
 	}

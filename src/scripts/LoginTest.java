@@ -25,8 +25,8 @@ public class LoginTest extends BaseLib{
 	 driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 	 driver.findElement(By.xpath("//li[text()='Payment Requests']")).click();
 	 //driver.findElement(By.xpath("//a[@href='/PaymentRequests']")); 
-	 
-	 
+
+
  }
 }*/
 
@@ -41,7 +41,7 @@ public class LoginTest extends BaseLib{
 	@Test
 	public void loginTest(){
 		LoginPage lp=new LoginPage(driver);
-CreatePaymntReqstPage paymnt=new CreatePaymntReqstPage(driver);
+		CreatePaymntReqstPage paymnt=new CreatePaymntReqstPage(driver);
 		ApproveFeePage onlyappfee= new ApproveFeePage(driver);
 		String username = ExcelUtilities.readData("Sheet1", 1, 1);
 		String password = ExcelUtilities.readData("Sheet1", 1, 2);		
@@ -70,5 +70,5 @@ CreatePaymntReqstPage paymnt=new CreatePaymntReqstPage(driver);
 		}
 		paymnt.navToPaymentreq();
 	}
-	
+
 }

@@ -16,7 +16,7 @@ import org.apache.poi.ss.util.cellwalk.CellWalkContext;
 import com.microsoft.schemas.office.visio.x2012.main.CellType;
 
 public class ExcelUtilities {
-	
+
 	static final String filePath=".\\testdata\\hpdata.xlsx"; 
 	/**
 	 * @description readData method read the data from testdata.xlsx based on sheet, row and cell.
@@ -29,7 +29,7 @@ public class ExcelUtilities {
 	(String sheetName, int rowNum, int cellNum) 
 	{
 		String value="";
-		
+
 		Workbook wb=null;
 		try {
 			wb = WorkbookFactory.create(new FileInputStream(new File(filePath)));
@@ -46,8 +46,8 @@ public class ExcelUtilities {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-			//Workbook wb = WorkbookFactory.create(new FileInputStream(new File(filePath)));  
-		
+		//Workbook wb = WorkbookFactory.create(new FileInputStream(new File(filePath)));  
+
 		value = wb.getSheet(sheetName).getRow
 				(rowNum).getCell(cellNum).getStringCellValue();	
 		return value;
