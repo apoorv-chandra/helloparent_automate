@@ -23,12 +23,12 @@
       <![CDATA[Browser closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="31231" started-at="2018-08-23T13:16:05Z" finished-at="2018-08-23T13:16:36Z">
+  <suite name="Suite" duration-ms="85199" started-at="2018-08-23T13:28:21Z" finished-at="2018-08-23T13:29:46Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="31231" started-at="2018-08-23T13:16:05Z" finished-at="2018-08-23T13:16:36Z">
+    <test name="Test" duration-ms="85199" started-at="2018-08-23T13:28:21Z" finished-at="2018-08-23T13:29:46Z">
       <class name="scripts.LoginTest">
-        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:scripts.LoginTest@bd8db5a]" name="preCondition" is-config="true" duration-ms="6200" started-at="2018-08-23T13:16:05Z" finished-at="2018-08-23T13:16:11Z">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:scripts.LoginTest@bd8db5a]" name="preCondition" is-config="true" duration-ms="5965" started-at="2018-08-23T13:28:21Z" finished-at="2018-08-23T13:28:27Z">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:scripts.LoginTest@bd8db5a]" name="loginTest" duration-ms="22899" started-at="2018-08-23T13:16:11Z" finished-at="2018-08-23T13:16:34Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:scripts.LoginTest@bd8db5a]" name="loginTest" duration-ms="76877" started-at="2018-08-23T13:28:27Z" finished-at="2018-08-23T13:29:44Z">
           <reporter-output>
             <line>
               <![CDATA[Logged in successfully]]>
@@ -58,7 +58,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:scripts.LoginTest@bd8db5a]" name="postCondition" is-config="true" duration-ms="2100" started-at="2018-08-23T13:16:34Z" finished-at="2018-08-23T13:16:36Z">
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:scripts.LoginTest@bd8db5a]" name="postCondition" is-config="true" duration-ms="2337" started-at="2018-08-23T13:29:44Z" finished-at="2018-08-23T13:29:46Z">
           <params>
             <param index="0">
               <value>
