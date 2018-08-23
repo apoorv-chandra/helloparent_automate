@@ -33,6 +33,7 @@ public class LoginTest extends BaseLib{
 import org.testng.annotations.Test;
 import generic.BaseLib;
 import generic.ExcelUtilities;
+import pageobjects.ApproveFeePage;
 import pageobjects.CreatePaymntReqstPage;
 import pageobjects.LoginPage;
 import pageobjects.PaymentRequestPage;
@@ -42,6 +43,7 @@ public class LoginTest extends BaseLib{
 	public void loginTest(){
 		LoginPage lp=new LoginPage(driver);
 		PaymentRequestPage paymnt=new PaymentRequestPage(driver);
+		ApproveFeePage onlyappfee= new ApproveFeePage(driver);
 		String username = ExcelUtilities.readData("Sheet1", 1, 1);
 		String password = ExcelUtilities.readData("Sheet1", 1, 2);		
 		lp.login(username, password);
@@ -69,4 +71,5 @@ public class LoginTest extends BaseLib{
 		}
 		paymnt.navToPaymentreq();
 	}
+	
 }
