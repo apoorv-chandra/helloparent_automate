@@ -36,13 +36,12 @@ import generic.ExcelUtilities;
 import pageobjects.ApproveFeePage;
 import pageobjects.CreatePaymntReqstPage;
 import pageobjects.LoginPage;
-import pageobjects.PaymentRequestPage;
 
 public class LoginTest extends BaseLib{
 	@Test
 	public void loginTest(){
 		LoginPage lp=new LoginPage(driver);
-		PaymentRequestPage paymnt=new PaymentRequestPage(driver);
+CreatePaymntReqstPage paymnt=new CreatePaymntReqstPage(driver);
 		ApproveFeePage onlyappfee= new ApproveFeePage(driver);
 		String username = ExcelUtilities.readData("Sheet1", 1, 1);
 		String password = ExcelUtilities.readData("Sheet1", 1, 2);		

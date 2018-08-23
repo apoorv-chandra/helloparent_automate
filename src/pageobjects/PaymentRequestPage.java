@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import generic.BaseLib;
 
-public class PaymentRequestPage extends BaseLib{
+/*public class PaymentRequestPage extends BaseLib{
   @FindBy(xpath="//span[text()='Fees']")
   private WebElement navToPaymntreqlink;
   @FindBy(xpath="//li[text()='Payment Requests']")
@@ -19,4 +19,4 @@ public class PaymentRequestPage extends BaseLib{
 		navToPaymntreqlink.click();
 		clickonPaymntReq.click();
 			}
-}
+}*/

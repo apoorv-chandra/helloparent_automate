@@ -1,10 +1,11 @@
 package scripts;
 import generic.BaseLib;
-import pageobjects.PaymentRequestPage;
+import pageobjects.CreatePaymntReqstPage;
+//import pageobjects.PaymentRequestPage;
 
 public class PaymentRequestTest extends BaseLib{
 	public void paymentRequest() {
-		PaymentRequestPage paymntreq=new PaymentRequestPage(driver);
+		CreatePaymntReqstPage paymntreq=new CreatePaymntReqstPage(driver);
 		paymntreq.navToPaymentreq();
 	}
 }

@@ -12,6 +12,7 @@ public class ApproveFeePage {
 @FindBys(@FindBy(xpath="//td[text()='Approved']"))
 private List<WebElement> allapproved;
 
+
 @FindBy(xpath="")
 private WebElement navtoApproveFee;
 
