@@ -72,6 +72,17 @@ public class LoginTest extends BaseLib{
 			Reporter.log("Cannot create",true);
 		}*/
 		paymnt.navToPaymentreq();
+		
+		// Check for approve fee
+		//WaitStatementLib.implicitWaitForMinutes(driver, 20);
+		onlyappfee.navtoApproveFee(driver);
+		try {
+			Thread.sleep(5000);
+			Reporter.log("Navigated to approve fee screen successfully.",true);
+		} catch (Exception e) {
+			e.printStackTrace();
+			Reporter.log("Cannot navigate",true);
+		}
 	}
 
 }

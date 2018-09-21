@@ -8,13 +8,10 @@
       <![CDATA[Navigating to test url]]>
     </line>
     <line>
-      <![CDATA[Logged in successfully]]>
-    </line>
-    <line>
       <![CDATA[Successfully navigated to Lists of payment request page.]]>
     </line>
     <line>
-      <![CDATA[New Payment Req created successfully]]>
+      <![CDATA[Navigated to approve fee screen successfully.]]>
     </line>
     <line>
       <![CDATA[Script passed]]>
@@ -23,12 +20,12 @@
       <![CDATA[Browser closed]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="68281" started-at="2018-09-20T06:54:01Z" finished-at="2018-09-20T06:55:09Z">
+  <suite name="Suite" duration-ms="31825" started-at="2018-09-21T13:31:28Z" finished-at="2018-09-21T13:32:00Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="68281" started-at="2018-09-20T06:54:01Z" finished-at="2018-09-20T06:55:09Z">
+    <test name="Test" duration-ms="31825" started-at="2018-09-21T13:31:28Z" finished-at="2018-09-21T13:32:00Z">
       <class name="scripts.LoginTest">
-        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:scripts.LoginTest@bd8db5a]" name="preCondition" is-config="true" duration-ms="8303" started-at="2018-09-20T06:54:01Z" finished-at="2018-09-20T06:54:09Z">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:scripts.LoginTest@bd8db5a]" name="preCondition" is-config="true" duration-ms="8096" started-at="2018-09-21T13:31:28Z" finished-at="2018-09-21T13:31:36Z">
           <params>
             <param index="0">
               <value>
@@ -45,24 +42,21 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="PASS" signature="loginTest()[pri:0, instance:scripts.LoginTest@bd8db5a]" name="loginTest" duration-ms="57852" started-at="2018-09-20T06:54:09Z" finished-at="2018-09-20T06:55:07Z">
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:scripts.LoginTest@bd8db5a]" name="loginTest" duration-ms="23707" started-at="2018-09-21T13:31:36Z" finished-at="2018-09-21T13:32:00Z">
           <reporter-output>
-            <line>
-              <![CDATA[Logged in successfully]]>
-            </line>
             <line>
               <![CDATA[Successfully navigated to Lists of payment request page.]]>
             </line>
             <line>
-              <![CDATA[New Payment Req created successfully]]>
+              <![CDATA[Navigated to approve fee screen successfully.]]>
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:scripts.LoginTest@bd8db5a]" name="postCondition" is-config="true" duration-ms="2089" started-at="2018-09-20T06:55:07Z" finished-at="2018-09-20T06:55:09Z">
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:scripts.LoginTest@bd8db5a]" name="postCondition" is-config="true" duration-ms="1" started-at="2018-09-21T13:32:00Z" finished-at="2018-09-21T13:32:00Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest()[pri:0, instance:scripts.LoginTest@bd8db5a] output=Logged in successfully]]]>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginTest.loginTest()[pri:0, instance:scripts.LoginTest@bd8db5a] output=Successfully navigated to Lists of payment request page.]]]>
               </value>
             </param>
           </params>

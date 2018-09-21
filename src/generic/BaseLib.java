@@ -48,7 +48,7 @@ public class BaseLib {
 			sLib.getScreenshot(driver, fileName);
 			Reporter.log("Screenshot is taken", true);
 		}
-		driver.close();
+		//driver.close();
 		Reporter.log("Browser closed", true);
 	}
 
