@@ -9,20 +9,20 @@ import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
 
 public class ApproveFeePage {
-	@FindBys(@FindBy(xpath="//td[text()='Approved']"))
+	@FindBys(@FindBy(xpath = "//td[text()='Approved']"))
 	private List<WebElement> allapproved;
 
-
-	@FindBy(xpath="")
+	@FindBy(xpath = "//a[text()='Approve Fees']")
 	private WebElement navtoApproveFee;
 
-	public ApproveFeePage(WebDriver driver){
+	public ApproveFeePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
 
 	public void navtoApproveFee() {
-
+		navtoApproveFee.click();
 	}
+
 	public List<WebElement> allelemnts() {
 
 		return allapproved;
