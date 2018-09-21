@@ -59,10 +59,10 @@ public class LoginTest extends BaseLib{
 		paymnt.navToPaymentreq();
 		Reporter.log("Successfully navigated to Lists of payment request page.",true);
 		//navigate to create new payment request page
-		CreatePaymntReqstPage newpaymntreq=new CreatePaymntReqstPage(driver);
+		//CreatePaymntReqstPage newpaymntreq=new CreatePaymntReqstPage(driver);
 		String Title = ExcelUtilities.readData("Sheet1", 5, 6);
 		String Descrptn = ExcelUtilities.readData("Sheet1", 5, 7);
-		newpaymntreq.CreateNewPaymntReq(Title, Descrptn);
+		paymnt.CreateNewPaymntReq(Title, Descrptn);
 		WaitStatementLib.implicitWaitForMinutes(driver, 20);
 /*		try {
 			Thread.sleep(2000);
