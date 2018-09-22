@@ -28,8 +28,8 @@ public class ApproveFeePage {
 
 	public void navtoApproveFee(WebDriver driver) {
 		Actions action = new Actions(driver);
-		action.moveToElement(hovtoFees).moveToElement(hovtoGenFees).moveToElement(navtoApproveFee)
-				.click(navtoApproveFee).build().perform();
+		action.moveToElement(hovtoFees).moveToElement(hovtoGenFees).click(navtoApproveFee).build().perform();
+		// moveToElement(navtoApproveFee)
 		// navtoApproveFee.click();
 	}
 

@@ -1,4 +1,5 @@
 package generic;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,42 +16,36 @@ public class BaseLib {
 
 	@BeforeMethod
 	@Parameters("browser")
-	public void preCondition(String browserName){
+	public void preCondition(String browserName) {
 		if (browserName.equalsIgnoreCase("firefox")) {
-			driver=new FirefoxDriver();
+			driver = new FirefoxDriver();
 			Reporter.log("Firefox launched", true);
-		}
-		else if(browserName.equalsIgnoreCase("chrome")){
-			System.setProperty("webdriver.chrome.driver", 
-					".\\exefiles\\chromedriver.exe");
-			driver=new ChromeDriver();
+		} else if (browserName.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", ".\\exefiles\\chromedriver.exe");
+			driver = new ChromeDriver();
 			Reporter.log("chrome launched", true);
-		}
-		else if(browserName.equalsIgnoreCase("ie")){
-			System.setProperty("webdriver.ie.driver", 
-					".\\exefiles\\IEDriverServer.exe");
-			driver=new InternetExplorerDriver();
+		} else if (browserName.equalsIgnoreCase("ie")) {
+			System.setProperty("webdriver.ie.driver", ".\\exefiles\\IEDriverServer.exe");
+			driver = new InternetExplorerDriver();
 			Reporter.log("IE launched", true);
 		}
 		driver.manage().window().maximize();
-		driver.get(GetPropertyValues.getPropertyValue
-				(".\\config.properties", "testURL"));
+		driver.get(GetPropertyValues.getPropertyValue(".\\config.properties", "testURL"));
 		Reporter.log("Navigating to test url", true);
 	}
+
 	@AfterMethod
-	public void postCondition(ITestResult result){
+	public void postCondition(ITestResult result) {
 		if (result.isSuccess()) {
 			Reporter.log("Script passed", true);
-		}
-		else{
+		} else {
 			String fileName = result.getMethod().getMethodName();
-			ScreenshotLib sLib=new ScreenshotLib();
+			ScreenshotLib sLib = new ScreenshotLib();
 			sLib.getScreenshot(driver, fileName);
 			Reporter.log("Screenshot is taken", true);
 		}
-		//driver.close();
+		// driver.close();
 		Reporter.log("Browser closed", true);
 	}
-
 
 }
