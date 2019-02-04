@@ -25,7 +25,14 @@ public class ApproveFeePage {
 	private WebElement navtoApproveFee;
 
 	@FindBy(xpath = "//ul[@class='select2-selection__rendered']")
-	private WebElement filterchange;
+	private WebElement filterBoxClick;
+	
+	@FindBy(xpath = "//span[@class='select2-selection__choice__remove']")
+	private WebElement rmvAlready;
+	
+	//@FindBy(xpath = "//span[@aria-activedescendant='select2-FeeStatus-result-8hjb-Approved']")
+	@FindBy(xpath = "//li[@id='select2-FeeStatus-result-d6r7-Approved']")
+	private WebElement selectApprovedFilter;
 	
 	@FindBy(xpath = "//button[text()='Filter']")
 	private WebElement clickFilter;
@@ -33,10 +40,6 @@ public class ApproveFeePage {
 	@FindBys
 	({@FindBy(xpath = "//td[text()='Approved']")})
 	private List<WebElement> allApproved;
-	
-	@FindBy(xpath = "//span[@class='select2-selection__choice__remove']")
-	private WebElement rmvAlready;
-	
 	
 	public ApproveFeePage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -52,11 +55,12 @@ public class ApproveFeePage {
 	
 	public void applyFilter(WebDriver driver)
 	{
-		filterchange.click();
+		filterBoxClick.click();
 		rmvAlready.click();
 		//filterchange.sendKeys("Appro");
-		Select approved=new Select(filterchange);
-		approved.selectByValue("Approved");
+		selectApprovedFilter.click();
+		//Select approved=new Select(selectApprovedFilter);
+		//approved.selectByValue("Approved");
 		clickFilter.click();
 		
 	}

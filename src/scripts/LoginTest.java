@@ -70,7 +70,7 @@ public class LoginTest extends BaseLib {
 		paymnt.navToPaymentreq();
 
 		// Check for approve fee
-	    WaitStatementLib.implicitWaitForMinutes(driver, 20);
+	    WaitStatementLib.implicitWaitForSeconds(driver, 5);
 		onlyappfee.navtoApproveFee(driver);
 		try {
 			Thread.sleep(5000);
@@ -80,7 +80,7 @@ public class LoginTest extends BaseLib {
 			Reporter.log("Cannot navigate", true);
 		}
 		onlyappfee.applyFilter(driver);
-		WaitStatementLib.implicitWaitForMinutes(driver, 20);
+		WaitStatementLib.implicitWaitForSeconds(driver, 5);
 		onlyappfee.allelemnts(driver);
 	}
 
