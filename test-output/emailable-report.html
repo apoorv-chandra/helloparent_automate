@@ -9,10 +9,17 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">40,107</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">60,991</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">scripts.LoginTest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1537615105811</td><td rowspan="1">32774</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">scripts.LoginTest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1549279357850</td><td rowspan="1">52424</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">scripts.LoginTest#loginTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Successfully navigated to Lists of payment request page.<br/>Navigated to approve fee screen successfully.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">scripts.LoginTest#loginTest</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Successfully navigated to Lists of payment request page.<br/>Navigated to approve fee screen successfully.</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been &quot;select&quot; but was &quot;ul&quot;
+Build info: version: &apos;3.5.3&apos;, revision: &apos;a88d25fe6b&apos;, time: &apos;2017-08-29T12:54:15.039Z&apos;
+System info: host: &apos;ITS-ME-APOORV&apos;, ip: &apos;169.254.220.107&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_144&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.&lt;init&gt;(Select.java:47)
+	at pageobjects.ApproveFeePage.applyFilter(ApproveFeePage.java:58)
+	at scripts.LoginTest.loginTest(LoginTest.java:82)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
