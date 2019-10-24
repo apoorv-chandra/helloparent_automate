@@ -19,7 +19,8 @@ public class CreatePaymntReqstPage extends BaseLib {
 	private WebElement lstdate;
 	@FindBy(xpath = "//input[@type='search']/following::li[1]")
 	private WebElement clickonstdntlst;
-	@FindBy(xpath = "//li[@class='select2-results__option']/following::li[2]")
+	//@FindBy(xpath = "//li[@class='select2-results__option']/following::li[2]")
+	@FindBy(xpath="//ul[@role='tree']/li/following-sibling::li[1]")
 	private WebElement slctStudent;
 	@FindBy(xpath = "//span[contains(text(),'Send')]")
 	private WebElement createPaymntReq;

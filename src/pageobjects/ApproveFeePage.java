@@ -37,6 +37,9 @@ public class ApproveFeePage {
 	@FindBy(xpath = "//button[text()='Filter']")
 	private WebElement clickFilter;
 	
+	@FindBy(xpath = "//ul[@id='select2-FeeStatus-results']/li[1]")
+	private WebElement selectAlloption;
+	
 	@FindBys
 	({@FindBy(xpath = "//td[text()='Approved']")})
 	private List<WebElement> allApproved;
@@ -55,8 +58,9 @@ public class ApproveFeePage {
 	
 	public void applyFilter(WebDriver driver)
 	{
-		filterBoxClick.click();
 		rmvAlready.click();
+		filterBoxClick.click();
+		selectAlloption.click();
 		//filterchange.sendKeys("Appro");
 		selectApprovedFilter.click();
 		//Select approved=new Select(selectApprovedFilter);

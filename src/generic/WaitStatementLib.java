@@ -1,6 +1,4 @@
 package generic;
-
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;

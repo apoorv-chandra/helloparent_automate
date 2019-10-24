@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
     <line>
       <![CDATA[chrome launched]]>
@@ -19,13 +19,25 @@
     <line>
       <![CDATA[Browser closed]]>
     </line>
+    <line>
+      <![CDATA[chrome launched]]>
+    </line>
+    <line>
+      <![CDATA[Navigating to test url]]>
+    </line>
+    <line>
+      <![CDATA[Script passed]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="44101" started-at="2019-02-04T12:38:16Z" finished-at="2019-02-04T12:39:00Z">
+  <suite name="Suite" duration-ms="64531" started-at="2019-09-24T11:09:35 IST" finished-at="2019-09-24T11:10:39 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="44101" started-at="2019-02-04T12:38:16Z" finished-at="2019-02-04T12:39:00Z">
+    <test name="testng" duration-ms="64531" started-at="2019-09-24T11:09:35 IST" finished-at="2019-09-24T11:10:39 IST">
       <class name="scripts.LoginTest">
-        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:scripts.LoginTest@bd8db5a]" name="preCondition" is-config="true" duration-ms="8118" started-at="2019-02-04T12:38:16Z" finished-at="2019-02-04T12:38:24Z">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:scripts.LoginTest@319b92f3]" name="preCondition" is-config="true" duration-ms="12728" started-at="2019-09-24T11:09:35 IST" finished-at="2019-09-24T11:09:48 IST">
           <params>
             <param index="0">
               <value>
@@ -42,37 +54,37 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="FAIL" signature="loginTest()[pri:0, instance:scripts.LoginTest@bd8db5a]" name="loginTest" duration-ms="35513" started-at="2019-02-04T12:38:24Z" finished-at="2019-02-04T12:38:59Z">
+        <test-method status="FAIL" signature="loginTest()[pri:1, instance:scripts.LoginTest@319b92f3]" name="loginTest" duration-ms="35267" started-at="2019-09-24T11:09:48 IST" finished-at="2019-09-24T11:10:23 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id='select2-FeeStatus-result-d6r7-Approved']"}
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@id='select2-FeeStatus-results']/li[1]"}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
-System info: host: 'ITS-ME-APOORV', ip: '169.254.220.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+System info: host: 'DESKTOP-POT9L09', ip: '192.168.0.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\apoorv\AppData\Local\Temp\scoped_dir10656_25903}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 13e01d05d08c6f9ccd30139afdf39b70
-*** Element info: {Using=xpath, value=//li[@id='select2-FeeStatus-result-d6r7-Approved']}]]>
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir4032_7132}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19c9262e3ddf79b6f66b9910f4ff97ee
+*** Element info: {Using=xpath, value=//ul[@id='select2-FeeStatus-results']/li[1]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id='select2-FeeStatus-result-d6r7-Approved']"}
-  (Session info: chrome=71.0.3578.98)
-  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.17763 x86_64) (WARNING: The server did not provide any stacktrace information)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@id='select2-FeeStatus-results']/li[1]"}
+  (Session info: chrome=76.0.3809.132)
+  (Driver info: chromedriver=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform=Windows NT 10.0.18362 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.5.3', revision: 'a88d25fe6b', time: '2017-08-29T12:54:15.039Z'
-System info: host: 'ITS-ME-APOORV', ip: '169.254.220.107', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_144'
+System info: host: 'DESKTOP-POT9L09', ip: '192.168.0.129', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\apoorv\AppData\Local\Temp\scoped_dir10656_25903}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=71.0.3578.98, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 13e01d05d08c6f9ccd30139afdf39b70
-*** Element info: {Using=xpath, value=//li[@id='select2-FeeStatus-result-d6r7-Approved']}
+Capabilities [{mobileEmulationEnabled=false, hasTouchScreen=false, platform=XP, acceptSslCerts=false, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, platformName=XP, setWindowRect=true, unexpectedAlertBehaviour=, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir=C:\Users\QUALIT~1\AppData\Local\Temp\scoped_dir4032_7132}, takesHeapSnapshot=true, pageLoadStrategy=normal, unhandledPromptBehavior=, databaseEnabled=false, handlesAlerts=true, version=76.0.3809.132, browserConnectionEnabled=false, nativeEvents=true, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 19c9262e3ddf79b6f66b9910f4ff97ee
+*** Element info: {Using=xpath, value=//ul[@id='select2-FeeStatus-results']/li[1]}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
 at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)
 at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)
 at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
@@ -88,31 +100,34 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:4
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy10.click(Unknown Source)
-at pageobjects.ApproveFeePage.applyFilter(ApproveFeePage.java:61)
-at scripts.LoginTest.loginTest(LoginTest.java:82)
+at pageobjects.ApproveFeePage.applyFilter(ApproveFeePage.java:63)
+at scripts.LoginTest.loginTest(LoginTest.java:77)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:584)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:172)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:804)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
@@ -127,11 +142,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             </line>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:scripts.LoginTest@bd8db5a]" name="postCondition" is-config="true" duration-ms="445" started-at="2019-02-04T12:38:59Z" finished-at="2019-02-04T12:39:00Z">
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:scripts.LoginTest@319b92f3]" name="postCondition" is-config="true" duration-ms="646" started-at="2019-09-24T11:10:23 IST" finished-at="2019-09-24T11:10:24 IST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginTest status=FAILURE method=LoginTest.loginTest()[pri:0, instance:scripts.LoginTest@bd8db5a] output=Successfully navigated to Lists of payment request page.]]]>
+                <![CDATA[[TestResult name=loginTest status=FAILURE method=LoginTest.loginTest()[pri:1, instance:scripts.LoginTest@319b92f3] output=Successfully navigated to Lists of payment request page.]]]>
               </value>
             </param>
           </params>
@@ -145,6 +160,46 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- postCondition -->
       </class> <!-- scripts.LoginTest -->
-    </test> <!-- Test -->
+      <class name="scripts.CalculateFeeTest">
+        <test-method status="PASS" signature="preCondition(java.lang.String)[pri:0, instance:scripts.CalculateFeeTest@fcd6521]" name="preCondition" is-config="true" duration-ms="8953" started-at="2019-09-24T11:10:24 IST" finished-at="2019-09-24T11:10:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[chrome launched]]>
+            </line>
+            <line>
+              <![CDATA[Navigating to test url]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method status="PASS" signature="CalculateFeeForAllClasses()[pri:0, instance:scripts.CalculateFeeTest@fcd6521]" name="CalculateFeeForAllClasses" duration-ms="6673" started-at="2019-09-24T11:10:33 IST" finished-at="2019-09-24T11:10:39 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CalculateFeeForAllClasses -->
+        <test-method status="PASS" signature="postCondition(org.testng.ITestResult)[pri:0, instance:scripts.CalculateFeeTest@fcd6521]" name="postCondition" is-config="true" duration-ms="207" started-at="2019-09-24T11:10:39 IST" finished-at="2019-09-24T11:10:39 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CalculateFeeForAllClasses status=SUCCESS method=CalculateFeeTest.CalculateFeeForAllClasses()[pri:0, instance:scripts.CalculateFeeTest@fcd6521] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Script passed]]>
+            </line>
+            <line>
+              <![CDATA[Browser closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- scripts.CalculateFeeTest -->
+    </test> <!-- testng -->
   </suite> <!-- Suite -->
 </testng-results>
